@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: linear-gradient(rgba(255, 186, 186, 0.255),rgb(0, 0, 0)),url(images/bg3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+   
+}
+
+.main-container{
+    height: 100vh;
+    width: 100%;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+.card {
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    padding: 30px;
+}
+.card img{
+    border: 4px solid red;
+    border-radius: 50%;
+    height: 140px;
+    width: 140px;
+    z-index: 100;
+}
+.card::before{
+    content: "";
+    height: 30%;
+    width: 100%;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    border-radius: 8px 8px 0 0;
+}
+
+.swiper-slide{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.swiper{
+    margin-top: 15%;
+}
+
+.card .media-icons{
+    position: absolute;
+    top: 23px;
+    right: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    cursor: pointer;
+   
+}
+.card .media-icons i{
+    color: red;
+    opacity: 0.6;
+    transition: all 0.3s ease;
+}
+.card .media-icons i:hover{
+    opacity: 1;
+}
+
+.card .name-profession{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+ }
+ 
+ .name-profession .name{
+     font-weight: 600;
+     font-size: 20px;
+ }
+ .name-profession .profession{
+     font-size: 15px;
+     font-weight: 400;
+ 
+ }
+ .rating i{
+     margin: 0 2px;
+     font-size: 16px;
+     color: rgb(255, 183, 0);
+ }
